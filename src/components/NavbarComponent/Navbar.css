@@ -1,0 +1,14 @@
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar-item{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.navbar-item:hover{
+    color:purple;
+}
