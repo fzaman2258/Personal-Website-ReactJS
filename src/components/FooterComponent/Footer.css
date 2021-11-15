@@ -1,0 +1,11 @@
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fas, .fab {
+    color: grey;
+    padding-left: 5px;
+    padding-right: 5px;;
+}

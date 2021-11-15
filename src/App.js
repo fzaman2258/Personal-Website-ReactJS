@@ -3,6 +3,7 @@ import { Routes, Route, Redirect, Link } from 'react-router-dom';
 import './App.css';
 
 import Navbar from './components/NavbarComponent/Navbar';
+import Footer from './components/FooterComponent/Footer';
 
 import LandingPage from './pages/LandingPage.jsx';
 import AboutMePage from './pages/AboutMePage.jsx';
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
           
       <Navbar/>
+      
       <Routes>
 
         <Route
@@ -38,6 +40,7 @@ function App() {
 
       </Routes>
 
+      <Footer/>
     </div>
   );
 }

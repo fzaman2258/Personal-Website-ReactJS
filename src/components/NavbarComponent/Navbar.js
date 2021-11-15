@@ -9,14 +9,29 @@ function Navbar () {
     }
     
     return (
-        <nav className = 'navbar'>
-            <div>
-                <Link onClick = {toggleMenu} className = 'navbar-item' to = '/'>Home</Link>
-                <Link onClick = {toggleMenu} className = 'navbar-item' to = '/aboutme'>About Me</Link>
-                <Link onClick = {toggleMenu} className = 'navbar-item' to = '/projects'>Projects</Link>
-                <Link onClick = {toggleMenu} className = 'navbar-item' to = '/workexperience'>Work Experience</Link>
-            </div>
-        </nav>
+        <div className = 'container'>
+            <nav className = 'navbar'>
+                <ul class = 'nav nav-tabs'>
+
+                    <li class = 'active'>
+                        <Link onClick = {toggleMenu} className = 'navbar-item' data-toggle = 'tab' to = '/'>Home</Link>
+                    </li>
+
+                    <li>
+                        <Link onClick = {toggleMenu} className = 'navbar-item' data-toggle = 'tab' to = '/aboutme'>About Me</Link>
+                    </li>
+
+                    <li>
+                        <Link onClick = {toggleMenu} className = 'navbar-item' data-toggle = 'tab' to = '/projects'>Projects</Link>
+                    </li>
+
+                    <li>
+                        <Link onClick = {toggleMenu} className = 'navbar-item' data-toggle = 'tab' to = '/workexperience'>Work Experience</Link>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
     )
 }
 

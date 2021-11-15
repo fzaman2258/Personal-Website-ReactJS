@@ -1,14 +1,35 @@
-.navbar{
-    display: flex;
-    justify-content: space-evenly;
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    
+  }
+
+.container {
+    width: 100vw;
+    height: 5vh;
 }
 
-.navbar-item{
-    padding-left: 10px;
-    padding-right: 10px;
+.navbar-item {
     text-decoration: none;
+    color: #b4afaf;
+    font-family: 'OPTIFrome';
 }
 
-.navbar-item:hover{
+.navbar-item:hover {
     color:purple;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100vw;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
 }
