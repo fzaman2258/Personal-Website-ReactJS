@@ -1,15 +1,27 @@
 * {
     box-sizing: border-box;
 }
-html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-    
-  }
 
 .container {
     width: 100vw;
-    height: 5vh;
+    height: 25vh;
+    display: inline-block;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color: #0B1680;
+}
+
+.navbar {
+    width: 100vw;
+    display: inline-block;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color: #0B1680;
+}
+
+.navbar-item > img {
+    vertical-align: middle;
+    margin: 10px 10px;
 }
 
 .navbar-item {
@@ -27,9 +39,23 @@ html {
     list-style: none;
     width: 100vw;
     justify-content: center;
+    vertical-align: middle;
+    list-style: none;
 }
 
 .navbar ul li {
     margin: 0 1rem;
     padding: 1rem;
+    vertical-align: middle;
+    list-style: none;
+
+}
+
+.navbar-logo {
+    justify-content: right;
+}
+
+.navbar-links {
+    justify-content: right;
+    vertical-align: middle;
 }

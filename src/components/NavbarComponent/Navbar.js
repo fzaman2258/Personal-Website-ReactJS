@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../images/logo3.PNG';
 import './Navbar.css';
 
 function Navbar () {
@@ -11,25 +12,30 @@ function Navbar () {
     return (
         <div className = 'container'>
             <nav className = 'navbar'>
-                <ul class = 'nav nav-tabs'>
 
-                    <li class = 'active'>
-                        <Link onClick = {toggleMenu} className = 'navbar-item' data-toggle = 'tab' to = '/'>Home</Link>
-                    </li>
+                <div className = 'navbar-logo'>
+                    <Link onClick = {toggleMenu} className = 'navbar-item' to = '/'>
+                        <img src = {logo} alt = 'Logo'/>
+                    </Link>
+                </div>
 
-                    <li>
-                        <Link onClick = {toggleMenu} className = 'navbar-item' data-toggle = 'tab' to = '/aboutme'>About Me</Link>
-                    </li>
+                <div className = 'navbar-links'>
+                    <ul>
+                        <li>
+                            <Link onClick = {toggleMenu} className = 'navbar-item' data-toggle = 'tab' to = '/'>Home</Link>
+                        </li>
+                        <li>
+                            <Link onClick = {toggleMenu} className = 'navbar-item' data-toggle = 'tab' to = '/aboutme'>About Me</Link>
+                        </li>
+                        <li>
+                            <Link onClick = {toggleMenu} className = 'navbar-item' data-toggle = 'tab' to = '/projects'>Projects</Link>
+                        </li>
+                        <li>
+                            <Link onClick = {toggleMenu} className = 'navbar-item' data-toggle = 'tab' to = '/workexperience'>Work Experience</Link>
+                        </li>
+                    </ul>
+                </div>
 
-                    <li>
-                        <Link onClick = {toggleMenu} className = 'navbar-item' data-toggle = 'tab' to = '/projects'>Projects</Link>
-                    </li>
-
-                    <li>
-                        <Link onClick = {toggleMenu} className = 'navbar-item' data-toggle = 'tab' to = '/workexperience'>Work Experience</Link>
-                    </li>
-
-                </ul>
             </nav>
         </div>
     )
